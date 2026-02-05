@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 4  clear
     5  ls
     6  mkdir class_activity1
@@ -24,3 +25,55 @@
    27  ./ex2
    28  nano copyresult.txt 
    29  history
+=======
+  411  ls
+  412  cat syscall1.c
+  413  ./syscall1
+  414  gcc syscall1.c -o syscall1
+  415  sudo apt install gcc
+  416  ./syscall1
+  417  ./syscall1.c
+  418  ls
+  419  nano touch.txt
+  420  ls
+  421  ks
+  422  ls
+  423  touch result.txt copyresult.txt
+  424  ls
+  425  nano syscall1.c
+  426  ls
+  427  ./syscall1
+  428  mkdir syscall1
+  429  ls
+  430  rm -r syscall1
+  431  ls
+  432  ./syscall1 Hello, System call!
+  433  gcc syscall1.c -o syscall1
+  434  ./syscall1
+  435  ls
+  436  nano result.txt
+  437  ls
+  438  cat result.txt
+  439  nano copyfilesyscall.c
+  440  gcc copyfilesyscall.c -o copyfilesyscall
+  441  ./copyfilesyscall
+  442  ls
+  443  cat copyresult.txt
+  444  cat result.txt
+  445  cd ..
+  446  history | tail -n 50 > /home/thouthearo/class_activity1/syscall_commands_history.txt
+  447  cat /home/thouthearo/class_activity1/syscall_commands_history.txt
+  448  ls syscall.c
+  449  cat syscall.c
+  450  cd class_activity1
+  451  cat syscall.c
+  452  ls
+  453  cat syscall1.c
+  454  ls
+  455  ./syscall1 
+  456  ls
+  457  cd class_activity1
+  458  history | tail -n 50 > /home/thouthearo/class_activity1/syscall_commands_history.txt
+  459  cat /home/thouthearo/class_activity1/syscall_commands_history.txt
+  460  history | tail -n 50 > /home/thouthearo/class_activity1/syscall_commands_history.txt
+>>>>>>> d3c417aece05fb6623607e00ebf8e4aa718a4473

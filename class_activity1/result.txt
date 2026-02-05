@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Hello Class Activity 1
+=======
+This is the content.
+>>>>>>> d3c417aece05fb6623607e00ebf8e4aa718a4473
