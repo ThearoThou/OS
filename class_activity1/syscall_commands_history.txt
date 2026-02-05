@@ -1,0 +1,26 @@
+4  clear
+    5  ls
+    6  mkdir class_activity1
+    7  cd class_activity1
+    8  nano sycall.c
+    9  ls
+   10  nano sycall.c 
+   11  gcc --version
+   12  apt install gcc 
+   13  gcc --version
+   14  ls
+   15  gcc sycall.c -o syscall
+   16  ./syscall
+   17  exite
+   18  exit
+   19  nano Copyfilesyscall.c
+   20  gcc Copyfilesyscall.c -o ex2
+   21  ./ex2
+   22  ls
+   23  nano Copyfilesyscall.c 
+   24  touch result.txt
+   25  touch copyresult.txt
+   26  nano result.txt
+   27  ./ex2
+   28  nano copyresult.txt 
+   29  history

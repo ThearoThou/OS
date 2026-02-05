@@ -1,0 +1,15 @@
+  304  gcc forkChild.c -o forkchild.exe
+  305  nano result_forkchild.txt 
+  306  htop
+  307  cd
+  308  sudu apt install htop -y
+  309  sudo apt install htop -y
+  310  htop
+  311  ls
+  312  htop
+  313  gcc ./forkchild forkChild.c
+  314  gcc -o forkchild forkChild.c
+  315  htop
+  316  gcc -o forkchild forkChild.c
+  317  ./forkchild > result_forkchild.txt
+  318  history | tail -n 15 > command_used_forkchild.txt
