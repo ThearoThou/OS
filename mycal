@@ -1,0 +1,3 @@
+#!/bin/bash
+# We use "$*" to join all arguments into a single string
+echo "$*" | bc -l

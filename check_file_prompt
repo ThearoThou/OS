@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# -n keeps the cursor on the same line for a nicer prompt
+echo -n "Enter the name of a file or directory: "
+read filename
+
+if [ -f "$filename" ]; then
+    echo "$filename is a regular file."
+elif [ -d "$filename" ]; then
+    echo "$filename is a directory."
+else
+    echo "$filename is another type of file or does not exist."
+fi

@@ -1,0 +1,23 @@
+#!/bin/bash
+
+for file in *; do
+    if [ -d "$file" ]; then
+        continue
+    fi
+
+    if [ "$file" == "$(basename "$0")" ]; then
+        continue
+    fi
+
+    extension="${file##*.}"
+
+    if [ "$file" == "$extension" ]; then
+        extension="no_extension"
+    fi
+
+    if [ ! -d "$extension" ]; then
+        mkdir -p "$extension"
+    fi
+
+    mv "$file" "$extension/"
+done

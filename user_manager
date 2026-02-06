@@ -1,0 +1,39 @@
+#!/bin/bash
+
+if [ "$EUID" -ne 0 ]; then
+  echo "Please run as root (use sudo)."
+  exit 1
+fi
+
+while true; do
+    read -p "Enter new group name: " group_name
+    
+    if getent group "$group_name" > /dev/null; then
+        echo "Error: Group '$group_name' already exists. Please try another."
+    else
+        break
+    fi
+done
+
+while true; do
+    read -p "Enter new username: " user_name
+    
+    if getent passwd "$user_name" > /dev/null; then
+        echo "Error: User '$user_name' already exists. Please try another."
+    else
+        break
+    fi
+done
+
+groupadd "$group_name"
+
+useradd -m -s /bin/bash -g "$group_name" "$user_name"
+
+passwd "$user_name"
+
+target_dir="/$user_name"
+mkdir -p "$target_dir"
+
+chown "$user_name":"$group_name" "$target_dir"
+chmod 770 "$target_dir"
+chmod +t "$target_dir"
